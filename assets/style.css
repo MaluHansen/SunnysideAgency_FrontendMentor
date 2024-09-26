@@ -13,8 +13,57 @@
     --darkGreyBlue: hsl(232, 10%, 55%);
     --GreyBlue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --mainText: 'barlow';
+    --header: 'fraunces';
 }
+
 body{
     margin: 0;
+    box-sizing: border-box;
     font-size: 18px;
+}
+
+header{
+    background-image: url(./img/desktop/image-header.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+}
+.logo{
+    height: 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+nav li{
+    list-style-type: none;
+    font-family: var(--mainText);
+    color: var(--White);
+}
+.contact-btn{
+    background-color: var(--White);
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--header);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+h1{
+    font-family: var(--header);
+    color: var(--White);
+    font-weight: 900;
+    text-transform: uppercase;
 }
