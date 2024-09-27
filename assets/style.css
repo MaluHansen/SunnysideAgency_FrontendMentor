@@ -94,7 +94,10 @@ nav li{
     padding: 1rem 2rem;
     text-transform: uppercase;
 }
-
+.contact-btn:hover{
+    color: var(--White);
+    background: rgba(255, 255, 255, 0.3);
+}
 
 
 .index-content-grid{
@@ -146,9 +149,9 @@ nav li{
     left: 0;
     bottom: 0;
     width: 7.2rem;
-    height: 8px;
+    height: 6px;
     background-color: var(--yellow);
-    opacity: 40%;
+    opacity: 20%;
     z-index: -1;
 }
 .content--row2 a::after{
@@ -161,6 +164,9 @@ nav li{
     background-color: var(--softRed);
     opacity: 20%;
     z-index: -1;
+}
+.content--row1 a:hover::after, .content--row2 a:hover::after{
+    opacity: 100%;
 }
 
 .grid-EP-left{
@@ -260,5 +266,9 @@ footer{
 }
 .footer-socialmedia .fa-brands{
     font-size: 1.5rem;
+}
+
+.footer-links p:hover, .fa-brands:hover{
+    color: var(--White);
 }
 
